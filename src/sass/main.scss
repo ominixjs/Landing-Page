@@ -14,6 +14,11 @@
   src: url("../../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Poppins Title";
+  src: url("../../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+
 $color-prg: #646464;
 $color-title: #333333;
 $color-js: #ffbd59;
@@ -25,12 +30,14 @@ html {
   margin: 0;
   padding: 0;
   user-select: none;
-  font-family: "Poppins Txt", sans-serif;
+  font-family: "Poppins Subtxt", sans-serif;
   color: $color-prg;
 }
 
-a, label, p {
-    letter-spacing: -.5px;
+a,
+label,
+p {
+  letter-spacing: -0.5px;
 }
 
 a {
@@ -43,21 +50,12 @@ body {
   font-size: 0.9em;
 }
 
-h1 {
-  font-family: "JetBrains";
-  font-size: 26px;
-  color: #333333;
-  & span {
-    font-family: inherit;
-    color: $color-js;
-  }
-}
-
 h2,
 h3,
 h4,
 h5 {
   color: #333333;
+  line-height: 1.2;
 }
 
 h1,
@@ -65,7 +63,19 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: "Poppins Title", sans-serif;
   letter-spacing: -1px;
+}
+
+h1 {
+  font-family: "JetBrains", serif !important;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #333333;
+  & span {
+    font-family: inherit;
+    color: $color-js;
+  }
 }
 
 ul {
@@ -84,6 +94,7 @@ ul {
   gap: 3rem;
   & li a {
     color: $color-title;
+    font-family: "Poppins Txt";
     &:hover {
       color: $color-js;
     }
@@ -98,4 +109,52 @@ ul {
   color: #f4f4f4;
   border-radius: 0.2rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
 }
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 63px);
+  padding-inline: 10%;
+
+  & .container {
+    width: 60%;
+
+    & h2 {
+      font-size: 80px;
+    }
+    & p {
+      font-size: 18px;
+      margin-block: 1rem;
+      max-width: 50%;
+    }
+  }
+
+  & .image {
+    display: flex;
+    justify-content: end;
+    width: 400px;
+    max-width: 40%;
+    position: relative;
+    background-color: red;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      z-index: -9;
+      display: flex;
+      width: 400px;
+      height: 600px;
+      border: 1px solid $color-title;
+    }
+    & img {
+      width: 400px;
+    }
+  }
+}
+
+// sass --watch src\sass\main.scss dist\css\main.css

@@ -10,17 +10,23 @@
   font-family: "Poppins Subtxt";
   src: url("../../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Poppins Title";
+  src: url("../../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+}
 *,
 html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   user-select: none;
-  font-family: "Poppins Txt", sans-serif;
+  font-family: "Poppins Subtxt", sans-serif;
   color: #646464;
 }
 
-a, label, p {
+a,
+label,
+p {
   letter-spacing: -0.5px;
 }
 
@@ -34,21 +40,12 @@ body {
   font-size: 0.9em;
 }
 
-h1 {
-  font-family: "JetBrains";
-  font-size: 26px;
-  color: #333333;
-}
-h1 span {
-  font-family: inherit;
-  color: #ffbd59;
-}
-
 h2,
 h3,
 h4,
 h5 {
   color: #333333;
+  line-height: 1.2;
 }
 
 h1,
@@ -56,7 +53,19 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: "Poppins Title", sans-serif;
   letter-spacing: -1px;
+}
+
+h1 {
+  font-family: "JetBrains", serif !important;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #333333;
+}
+h1 span {
+  font-family: inherit;
+  color: #ffbd59;
 }
 
 ul {
@@ -76,6 +85,7 @@ ul {
 }
 .navigation li a {
   color: #333333;
+  font-family: "Poppins Txt";
 }
 .navigation li a:hover {
   color: #ffbd59;
@@ -89,6 +99,48 @@ ul {
   color: #f4f4f4;
   border-radius: 0.2rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 63px);
+  padding-inline: 10%;
+}
+#home .container {
+  width: 60%;
+}
+#home .container h2 {
+  font-size: 80px;
+}
+#home .container p {
+  font-size: 18px;
+  margin-block: 1rem;
+  max-width: 50%;
+}
+#home .image {
+  display: flex;
+  justify-content: end;
+  width: 400px;
+  max-width: 40%;
+  position: relative;
+  background-color: red;
+}
+#home .image::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: -9;
+  display: flex;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #333333;
+}
+#home .image img {
+  width: 400px;
 }
 
 /*# sourceMappingURL=main.css.map */

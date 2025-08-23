@@ -1,6 +1,6 @@
 @font-face {
   font-family: "JetBrains";
-  src: url("../../assets/fonts/JetBrains_Mono/static/JetBrainsMono-ExtraLight.ttf") format("truetype");
+  src: url("../../assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
   font-family: "Poppins Txt";
@@ -26,7 +26,8 @@ html {
 
 a,
 label,
-p {
+p,
+li {
   letter-spacing: -0.5px;
 }
 
@@ -59,6 +60,7 @@ h5 {
 
 h1 {
   font-family: "JetBrains", serif !important;
+  font-weight: 300;
   font-size: 24px;
   text-transform: uppercase;
   color: #333333;
@@ -94,8 +96,8 @@ ul {
 .btn-primary {
   border: 0;
   outline: 0;
-  padding: 0.2rem 1.5rem;
-  background-color: #4da2c3;
+  padding: 0.3rem 1rem;
+  background-color: #0f5685;
   color: #f4f4f4;
   border-radius: 0.2rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -137,10 +139,66 @@ ul {
   display: flex;
   width: 400px;
   height: 600px;
-  border: 1px solid #333333;
+  border: 1px solid #0f5685;
 }
 #home .image img {
   width: 400px;
+}
+
+#attribute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0;
+  background-color: #ebe7dc;
+}
+#attribute h2 {
+  font-size: 46px;
+  margin-bottom: 2rem;
+}
+#attribute ul li {
+  font-family: "Poppins Txt", sans-serif;
+  font-size: 1.1em;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0;
+}
+
+#content {
+  padding: 10% 15%;
+}
+#content h2 {
+  font-size: 46px;
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+#content .scroll-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#content .scroll-items .item {
+  display: flex;
+  align-items: start;
+  width: calc(50% - 2rem);
+  height: 200px;
+  max-height: 200px;
+}
+#content .scroll-items .item .mark {
+  font-family: "jetBrains", serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #0f5685;
+}
+#content .scroll-items .item h3 {
+  font-size: 20px;
+  height: 45px;
+  display: inline-flex;
+  align-items: end;
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

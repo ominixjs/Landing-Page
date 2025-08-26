@@ -1,37 +1,25 @@
-@font-face {
-  font-family: "JetBrains";
-  src: url("../../assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Poppins Txt";
-  src: url("../../assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Poppins Subtxt";
-  src: url("../../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Poppins Title";
-  src: url("../../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css");
 *,
 html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   user-select: none;
-  font-family: "Poppins Subtxt", sans-serif;
-  color: #646464;
+  font-family: "Poppins", sans-serif;
+  color: #535353;
 }
 
 a,
 label,
 p,
-li {
+li,
+i {
   letter-spacing: -0.5px;
 }
 
-a {
+a,
+i {
   text-decoration: none;
   transition: color 300ms;
 }
@@ -45,7 +33,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #333333;
+  color: #3b3b3b;
   line-height: 1.2;
 }
 
@@ -54,12 +42,16 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Poppins Title", sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: -1px;
 }
 
+h1,
+h3.mark {
+  font-family: "JetBrains Mono", serif !important;
+}
+
 h1 {
-  font-family: "JetBrains", serif !important;
   font-weight: 300;
   font-size: 24px;
   text-transform: uppercase;
@@ -87,7 +79,7 @@ ul {
 }
 .navigation li a {
   color: #333333;
-  font-family: "Poppins Txt";
+  font-weight: 500;
 }
 .navigation li a:hover {
   color: #ffbd59;
@@ -157,7 +149,7 @@ ul {
   margin-bottom: 2rem;
 }
 #attribute ul li {
-  font-family: "Poppins Txt", sans-serif;
+  font-weight: 400;
   font-size: 1.1em;
   color: #333333;
   display: flex;
@@ -178,27 +170,233 @@ ul {
 #content .scroll-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 #content .scroll-items .item {
   display: flex;
   align-items: start;
   width: calc(50% - 2rem);
-  height: 200px;
-  max-height: 200px;
+  height: 150px;
+  max-height: 150px;
 }
-#content .scroll-items .item .mark {
-  font-family: "jetBrains", serif;
+#content .scroll-items .item h3.mark {
+  letter-spacing: -2.5px;
   font-weight: 600;
   font-size: 40px;
   color: #0f5685;
 }
-#content .scroll-items .item h3 {
+#content .scroll-items .item h4 {
   font-size: 20px;
-  height: 45px;
+  height: 44px;
   display: inline-flex;
   align-items: end;
   margin-bottom: 0.5rem;
+}
+
+#about {
+  display: grid;
+  place-content: center;
+  padding-block: 5%;
+  border-top: 1px solid #535353;
+}
+#about .card {
+  width: 400px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2rem;
+  gap: 1rem;
+}
+#about .card > img {
+  max-width: 150px;
+  border-radius: 50%;
+  filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);
+  border: 4px solid #ffbd59;
+}
+#about .card p.mini-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+}
+#about .card ul.list-skills {
+  display: flex;
+  gap: 0.5rem;
+}
+#about .card ul.list-skills li {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffbd59;
+  background-color: rgba(255, 189, 89, 0.15);
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.2rem;
+}
+#about .card .desc {
+  text-align: center;
+  padding-inline: 2rem;
+}
+#about .card ul.social-list {
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+  padding-block: 0.5rem;
+}
+#about .card ul.social-list li:not(:last-child) {
+  border-right: 1px solid #dbdbdb;
+}
+#about .card ul.social-list li {
+  padding-inline: 1rem;
+}
+#about .card ul.social-list li a {
+  font-size: 18px;
+}
+#about .card ul.social-list li a:hover i {
+  color: #ffbd59;
+}
+#about .card ul.social-list li a i {
+  display: flex;
+}
+
+#offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ebe7dc;
+}
+#offer .container {
+  width: 40%;
+}
+#offer .intro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+#offer .intro img {
+  width: 350px;
+  height: 100%;
+}
+#offer .intro figcaption h2 {
+  font-size: 36px;
+  max-width: 50%;
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+}
+#offer .intro figcaption > p {
+  max-width: 50%;
+}
+#offer .intro figcaption .price {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 3rem;
+}
+#offer .intro figcaption .price .last-price, #offer .intro figcaption .price .current-price {
+  font-weight: bold;
+  display: inline-flex;
+  align-items: start;
+  line-height: 1;
+  color: #333333;
+}
+#offer .intro figcaption .price .last-price sup, #offer .intro figcaption .price .current-price sup {
+  font-size: 14px !important;
+  color: #333333;
+}
+#offer .intro figcaption .price .last-price sup:first-child, #offer .intro figcaption .price .current-price sup:first-child {
+  margin-right: 0.4rem;
+}
+#offer .intro figcaption .price .last-price {
+  padding-bottom: 0.2rem;
+  font-size: 36px;
+  position: relative;
+}
+#offer .intro figcaption .price .last-price::after {
+  content: "";
+  width: 110%;
+  height: 2px;
+  background-color: #333333;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  transform: rotate(160deg);
+}
+#offer .intro figcaption .price .current-price {
+  padding-top: 0.4rem;
+  border-top: 1px solid #535353;
+  font-size: 52px;
+  color: #0f5685;
+}
+#offer .intro figcaption .price .current-price sup:not(:first-child) {
+  color: #0f5685;
+}
+#offer .form {
+  width: 30%;
+  padding-left: 1rem;
+  border-left: 1px solid #535353;
+}
+#offer .form h3 {
+  font-size: 36px;
+  max-width: 80%;
+  line-height: 1.1;
+}
+#offer .form p {
+  max-width: 60%;
+  margin-block: 1rem;
+}
+#offer .form .payment-methods {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  border: 1px solid #535353;
+  border-radius: 0.4rem;
+}
+#offer .form .payment-methods li {
+  display: inherit;
+}
+#offer .form .payment-methods li:not(:last-child) {
+  border-right: 1px solid #535353;
+}
+#offer .form .payment-methods li input {
+  appearance: none;
+}
+#offer .form .payment-methods li input:checked + label {
+  color: #0f5685;
+  background-color: rgba(15, 86, 133, 0.2);
+}
+#offer .form .payment-methods li label {
+  padding: 0.3rem 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+#offer .form .input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 0.5rem;
+}
+#offer .form .input-area input {
+  width: 60%;
+  padding: 0.2rem 1rem;
+  background-color: #f4f4f4;
+  border: 1px solid #535353;
+  border-radius: 0.2rem;
+  outline: 3px solid transparent;
+  transition: outline-color 300ms;
+}
+#offer .form .input-area input[name=dateVenc] {
+  width: 20%;
+}
+#offer .form .input-area input[name=nCodSeg] {
+  width: 20%;
+}
+#offer .form .input-area input:focus {
+  outline-color: rgba(15, 86, 133, 0.3);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,6 +8,7 @@ html {
   user-select: none;
   font-family: "Poppins", sans-serif;
   color: #535353;
+  scroll-behavior: smooth;
 }
 
 a,
@@ -21,7 +22,7 @@ i {
 a,
 i {
   text-decoration: none;
-  transition: color 300ms;
+  transition: color 300ms, outline-color 300ms;
 }
 
 body {
@@ -51,13 +52,13 @@ h3.mark {
   font-family: "JetBrains Mono", serif !important;
 }
 
-h1 {
+.logo {
   font-weight: 300;
   font-size: 24px;
   text-transform: uppercase;
   color: #333333;
 }
-h1 span {
+.logo span {
   font-family: inherit;
   color: #ffbd59;
 }
@@ -397,6 +398,61 @@ ul {
 }
 #offer .form .input-area input:focus {
   outline-color: rgba(15, 86, 133, 0.3);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5%;
+}
+footer .footer-social {
+  display: flex;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+footer .footer-social li a {
+  display: grid;
+  place-content: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2em;
+  border: 1px solid #ebe7dc;
+  border-radius: 50%;
+  outline: 4px solid transparent;
+}
+footer .footer-social li a:hover {
+  outline-color: rgba(255, 189, 89, 0.2);
+}
+footer .footer-social li a:hover i {
+  color: #ffbd59;
+}
+footer .footer-social li a i {
+  display: flex;
+}
+footer .footer-help {
+  margin-block: 2rem;
+}
+footer .footer-help h3 {
+  font-size: 1.2em;
+  color: #0f5685;
+  font-weight: 600;
+}
+footer .footer-help li a {
+  font-size: 0.9em;
+}
+footer .footer-help li a:hover {
+  color: #0f5685;
+  text-decoration: underline;
+}
+footer > p {
+  width: 100%;
+  padding-block: 1rem;
+  color: #ebe7dc;
+  background-color: #0f5685;
+  font-size: 0.9em;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=main.css.map */

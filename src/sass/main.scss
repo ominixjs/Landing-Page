@@ -15,6 +15,7 @@ html {
   user-select: none;
   font-family: "Poppins", sans-serif;
   color: $color-prg;
+  scroll-behavior: smooth;
 }
 
 a,
@@ -28,7 +29,7 @@ i {
 a,
 i {
   text-decoration: none;
-  transition: color 300ms;
+  transition: color 300ms, outline-color 300ms;
 }
 
 body {
@@ -58,7 +59,7 @@ h3.mark {
   font-family: "JetBrains Mono", serif !important;
 }
 
-h1 {
+.logo {
   font-weight: 300;
   font-size: 24px;
   text-transform: uppercase;
@@ -456,6 +457,71 @@ ul {
         }
       }
     }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5%;
+
+  & .footer-social {
+    display: flex;
+    gap: 1rem;
+    padding-block: 1rem;
+
+    & li a {
+      display: grid;
+      place-content: center;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.2em;
+      border: 1px solid $bg-secundary;
+      border-radius: 50%;
+      outline: 4px solid transparent;
+
+      &:hover {
+        outline-color: rgba(255, 189, 89, 0.2);
+      }
+
+      &:hover i {
+        color: $color-js;
+      }
+
+      & i {
+        display: flex;
+      }
+    }
+  }
+
+  .footer-help {
+    margin-block: 2rem;
+
+    & h3 {
+      font-size: 1.2em;
+      color: $bg-btn;
+      font-weight: 600;
+    }
+
+    & li a {
+      font-size: 0.9em;
+
+      &:hover {
+        color: #0f5685;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  & > p {
+    width: 100%;
+    padding-block: 1rem;
+    color: $bg-secundary;
+    background-color: $bg-btn;
+    font-size: 0.9em;
+    font-weight: 300;
   }
 }
 

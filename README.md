@@ -10,7 +10,7 @@ que muitos empresários gostam desse estilo para ofertar seus produtos.
 
 ![javascript](https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square)
 
-![catpromation](https://i.pinimg.com/originals/35/98/8b/35988bf09ce2be958e36f4bc8f4575d1.gif)
+![catprogramation](https://i.pinimg.com/originals/35/98/8b/35988bf09ce2be958e36f4bc8f4575d1.gif)
 
 ### Veja mais ou entre em Contato :iphone:
 

@@ -373,6 +373,7 @@ ul {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.2px;
+  transition: background-color 300ms;
   cursor: pointer;
 }
 #offer .form .input-area {
@@ -406,6 +407,7 @@ footer {
   align-items: center;
   text-align: center;
   padding-top: 5%;
+  border-top: 1px solid #535353;
 }
 footer .footer-social {
   display: flex;
@@ -453,6 +455,9 @@ footer > p {
   background-color: #0f5685;
   font-size: 0.9em;
   font-weight: 300;
+}
+footer > p a {
+  color: #ffbd59;
 }
 
 /*# sourceMappingURL=main.css.map */

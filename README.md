@@ -12,6 +12,11 @@ que muitos empresários gostam desse estilo para ofertar seus produtos.
 
 ![catprogramation](https://i.pinimg.com/originals/35/98/8b/35988bf09ce2be958e36f4bc8f4575d1.gif)
 
+### Material usado
+
+- Foto criada por IA
+- Flaticons
+
 ### Veja mais ou entre em Contato :iphone:
 
 - [Github](https://github.com/ominixjs)

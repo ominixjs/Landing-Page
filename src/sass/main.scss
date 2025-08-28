@@ -425,6 +425,8 @@ ul {
           font-weight: 500;
           letter-spacing: 0.2px;
 
+          transition: background-color 300ms;
+
           cursor: pointer;
         }
       }
@@ -466,6 +468,7 @@ footer {
   align-items: center;
   text-align: center;
   padding-top: 5%;
+  border-top: 1px solid $color-prg;
 
   & .footer-social {
     display: flex;
@@ -522,6 +525,10 @@ footer {
     background-color: $bg-btn;
     font-size: 0.9em;
     font-weight: 300;
+
+    & a {
+      color: #ffbd59;
+    }
   }
 }
 

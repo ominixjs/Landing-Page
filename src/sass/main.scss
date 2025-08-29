@@ -1,78 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css");
-
-$color-prg: #535353;
-$color-title: #333333;
-$color-js: #ffbd59;
-$bg-btn: #0f5685;
-$bg-secundary: #ebe7dc;
-
-*,
-html {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  user-select: none;
-  font-family: "Poppins", sans-serif;
-  color: $color-prg;
-  scroll-behavior: smooth;
-}
-
-a,
-label,
-p,
-li,
-i {
-  letter-spacing: -0.5px;
-}
-
-a,
-i {
-  text-decoration: none;
-  transition: color 300ms, outline-color 300ms;
-}
-
-body {
-  background-color: #f4f4f4;
-  font-size: 0.9em;
-}
-
-h2,
-h3,
-h4,
-h5 {
-  color: #3b3b3b;
-  line-height: 1.2;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Poppins", sans-serif;
-  letter-spacing: -1px;
-}
-
-h1,
-h3.mark {
-  font-family: "JetBrains Mono", serif !important;
-}
-
-.logo {
-  font-weight: 300;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #333333;
-  & span {
-    font-family: inherit;
-    color: $color-js;
-  }
-}
-
-ul {
-  list-style-type: none;
-}
+@import "global.scss";
 
 .navbar {
   display: flex;
@@ -130,7 +56,6 @@ ul {
     width: 400px;
     max-width: 40%;
     position: relative;
-    background-color: red;
 
     &::after {
       content: "";
@@ -351,7 +276,7 @@ ul {
 
         & .last-price {
           padding-bottom: 0.2rem;
-          font-size: 36px;
+          font-size: 40px;
           position: relative;
 
           &::after {
@@ -369,7 +294,7 @@ ul {
         & .current-price {
           padding-top: 0.4rem;
           border-top: 1px solid $color-prg;
-          font-size: 52px;
+          font-size: 58px;
           color: $bg-btn;
 
           & sup:not(:first-child) {
@@ -382,6 +307,7 @@ ul {
 
   & .form {
     width: 30%;
+    max-width: 30%;
     padding-left: 1rem;
     border-left: 1px solid $color-prg;
 
@@ -420,8 +346,8 @@ ul {
         }
 
         & label {
-          padding: 0.3rem 1rem;
-          font-size: 14px;
+          padding: 0.2rem 1rem;
+          font-size: 12px;
           font-weight: 500;
           letter-spacing: 0.2px;
 
@@ -433,13 +359,11 @@ ul {
     }
 
     & .input-area {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
       margin-top: 0.5rem;
+      width: 60%;
 
       & input {
-        width: 60%;
+        width: 100%;
         padding: 0.2rem 1rem;
         background-color: #f4f4f4;
         border: 1px solid $color-prg;
@@ -447,16 +371,27 @@ ul {
         outline: 3px solid transparent;
         transition: outline-color 300ms;
 
-        &[name="dateVenc"] {
-          width: 20%;
-        }
-        &[name="nCodSeg"] {
-          width: 20%;
-        }
-
         &:focus {
           outline-color: rgba(15, 86, 133, 0.3);
         }
+      }
+
+      & label {
+        font-size: 0.9em;
+      }
+    }
+
+    & .grid-input {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 1rem;
+
+      & .input-width-full {
+        width: 100%;
+      }
+      & .input-width {
+        width: calc(50% - 0.5rem) !important;
       }
     }
   }

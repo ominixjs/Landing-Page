@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css");
+html.sr .show-element,
+html.sr .slide-left-list li,
+html.sr .slide-left,
+html.sr .slide-top,
+html.sr .slide-top-elms {
+  visibility: hidden;
+}
+
 *,
 html {
   box-sizing: border-box;
@@ -47,7 +55,7 @@ h5 {
   letter-spacing: -1px;
 }
 
-h1,
+.logo,
 h3.mark {
   font-family: "JetBrains Mono", serif !important;
 }
@@ -121,7 +129,6 @@ ul {
   width: 400px;
   max-width: 40%;
   position: relative;
-  background-color: red;
 }
 #home .image::after {
   content: "";
@@ -312,7 +319,7 @@ ul {
 }
 #offer .intro figcaption .price .last-price {
   padding-bottom: 0.2rem;
-  font-size: 36px;
+  font-size: 40px;
   position: relative;
 }
 #offer .intro figcaption .price .last-price::after {
@@ -328,7 +335,7 @@ ul {
 #offer .intro figcaption .price .current-price {
   padding-top: 0.4rem;
   border-top: 1px solid #535353;
-  font-size: 52px;
+  font-size: 58px;
   color: #0f5685;
 }
 #offer .intro figcaption .price .current-price sup:not(:first-child) {
@@ -336,6 +343,7 @@ ul {
 }
 #offer .form {
   width: 30%;
+  max-width: 30%;
   padding-left: 1rem;
   border-left: 1px solid #535353;
 }
@@ -369,21 +377,19 @@ ul {
   background-color: rgba(15, 86, 133, 0.2);
 }
 #offer .form .payment-methods li label {
-  padding: 0.3rem 1rem;
-  font-size: 14px;
+  padding: 0.2rem 1rem;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.2px;
   transition: background-color 300ms;
   cursor: pointer;
 }
 #offer .form .input-area {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
   margin-top: 0.5rem;
+  width: 60%;
 }
 #offer .form .input-area input {
-  width: 60%;
+  width: 100%;
   padding: 0.2rem 1rem;
   background-color: #f4f4f4;
   border: 1px solid #535353;
@@ -391,14 +397,23 @@ ul {
   outline: 3px solid transparent;
   transition: outline-color 300ms;
 }
-#offer .form .input-area input[name=dateVenc] {
-  width: 20%;
-}
-#offer .form .input-area input[name=nCodSeg] {
-  width: 20%;
-}
 #offer .form .input-area input:focus {
   outline-color: rgba(15, 86, 133, 0.3);
+}
+#offer .form .input-area label {
+  font-size: 0.9em;
+}
+#offer .form .grid-input {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+}
+#offer .form .grid-input .input-width-full {
+  width: 100%;
+}
+#offer .form .grid-input .input-width {
+  width: calc(50% - 0.5rem) !important;
 }
 
 footer {

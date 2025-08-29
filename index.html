@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-Br" class="sr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ebook Guia de boas praticas</title>
 
     <link rel="stylesheet" href="./dist/css/main.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <!-- Cabeçario -->
     <header>
       <nav class="navbar">
         <a href="index.html"
-          ><h1 class="logo">Ominix<span>js</span></h1></a
+          ><h1 class="logo show-element">Ominix<span>js</span></h1></a
         >
-        <ul class="navigation">
+        <ul class="navigation show-element">
           <li><a href="#home">Inicio</a></li>
           <li><a href="#attribute">Benefíocios</a></li>
           <li><a href="#content">Conteúdo</a></li>
@@ -22,7 +23,9 @@
         </ul>
 
         <a href="#offer">
-          <button type="button" class="btn-primary">Quero o meu</button></a
+          <button type="button" class="btn-primary show-element">
+            Quero o meu
+          </button></a
         >
       </nav>
     </header>
@@ -30,27 +33,29 @@
     <!--  Hero section -->
     <section id="home">
       <div class="container">
-        <h2>
+        <h2 class="slide-left">
           Domine JavaScript de ponta a ponta: do Front ao Back com boas práticas
         </h2>
-        <p>
+        <p class="slide-left">
           Um guia prático para desenvolver aplicações escaláveis, seguras e de
           alta performance.
         </p>
         <a href="#offer">
-          <button type="button" class="btn-primary">Quero o meu</button></a
+          <button type="button" class="btn-primary slide-left">
+            Quero o meu
+          </button></a
         >
       </div>
       <div class="image">
-        <img src="assets/img/ebook.png" alt="ilustração" />
+        <img src="assets/img/ebook.png" alt="ilustração" class="slide-top" />
       </div>
     </section>
 
     <!--  Lista de beneficios -->
     <section id="attribute">
-      <h2>Benefícios que você vai levar para sua vida!</h2>
+      <h2 class="slide-top">Benefícios que você vai levar para sua vida!</h2>
       <div class="container">
-        <ul>
+        <ul class="slide-left-list">
           <li>
             <img src="assets/img/check.svg" alt="icone" />Escreva código limpo e
             fácil de manter;
@@ -77,13 +82,15 @@
 
     <!-- Lista de conteudos -->
     <section id="content">
-      <h2>Sua trilha que você irá percorrer</h2>
+      <h2 class="slide-top">Sua trilha que você irá percorrer</h2>
       <div class="scroll-items">
         <div class="item">
-          <h3 class="mark">01.</h3>
+          <h3 class="mark show-element">01.</h3>
           <div>
-            <h4>Fundamentos de boas práticas em JavaScript</h4>
-            <p>
+            <h4 class="slide-top-elms">
+              Fundamentos de boas práticas em JavaScript
+            </h4>
+            <p class="slide-top-elms">
               Antes de dominar frameworks ou bibliotecas, é essencial conhecer
               as boas práticas da linguagem. Neste capítulo você vai aprender
               como escrever código limpo, evitar repetições desnecessárias e
@@ -92,10 +99,12 @@
           </div>
         </div>
         <div class="item">
-          <h3 class="mark">04.</h3>
+          <h3 class="mark show-element">04.</h3>
           <div>
-            <h4>Back-end: criação de APIs, segurança e escalabilidade</h4>
-            <p>
+            <h4 class="slide-top-elms">
+              Back-end: criação de APIs, segurança e escalabilidade
+            </h4>
+            <p class="slide-top-elms">
               Com Node.js, o JavaScript também reina no back-end. Neste
               capítulo, você aprenderá a estruturar APIs seguras e bem
               documentadas, lidar com autenticação de usuários e criar
@@ -104,10 +113,12 @@
           </div>
         </div>
         <div class="item">
-          <h3 class="mark">02.</h3>
+          <h3 class="mark show-element">02.</h3>
           <div>
-            <h4>Organização e modularização de código</h4>
-            <p>
+            <h4 class="slide-top-elms">
+              Organização e modularização de código
+            </h4>
+            <p class="slide-top-elms">
               Projetos grandes exigem estrutura. Aqui você vai descobrir como
               dividir seu código em módulos reutilizáveis, mantendo a lógica
               separada e bem organizada. Isso ajuda não só na clareza do
@@ -116,12 +127,12 @@
           </div>
         </div>
         <div class="item">
-          <h3 class="mark">05.</h3>
+          <h3 class="mark show-element">05.</h3>
           <div>
-            <h4>
+            <h4 class="slide-top-elms">
               Banco de dados: integração, consultas otimizadas e boas práticas
             </h4>
-            <p>
+            <p class="slide-top-elms">
               Nenhuma aplicação completa funciona sem dados. Aqui você vai
               entender como integrar JavaScript a bancos de dados relacionais
               (SQL) e não relacionais (NoSQL), aplicar consultas eficientes e
@@ -131,10 +142,12 @@
           </div>
         </div>
         <div class="item">
-          <h3 class="mark">03.</h3>
+          <h3 class="mark show-element">03.</h3>
           <div>
-            <h4>Front-end: interação, performance e acessibilidade</h4>
-            <p>
+            <h4 class="slide-top-elms">
+              Front-end: interação, performance e acessibilidade
+            </h4>
+            <p class="slide-top-elms">
               No front-end, JavaScript é a ponte entre design e funcionalidade.
               Este tópico mostra como criar interfaces rápidas e interativas,
               otimizar a performance do site e aplicar técnicas de
@@ -144,10 +157,12 @@
           </div>
         </div>
         <div class="item">
-          <h3 class="mark">06.</h3>
+          <h3 class="mark show-element">06.</h3>
           <div>
-            <h4>Extra: dicas de ferramentas e workflows</h4>
-            <p>
+            <h4 class="slide-top-elms">
+              Extra: dicas de ferramentas e workflows
+            </h4>
+            <p class="slide-top-elms">
               Além do código, a produtividade depende de boas ferramentas. Este
               extra traz recomendações de editores, extensões, bibliotecas,
               frameworks e fluxos de trabalho que aceleram o desenvolvimento e
@@ -160,7 +175,7 @@
 
     <!-- Sobre me -->
     <section id="about">
-      <div class="card">
+      <div class="card show-element">
         <img src="assets/img/gato-user.jpg" alt="ilustração" loading="lazy" />
 
         <div>
@@ -200,27 +215,33 @@
     <section id="offer">
       <div class="container">
         <figure class="intro">
-          <img src="assets/img/ebook.png" alt="ilustração" />
+          <img src="assets/img/ebook.png" alt="ilustração" class="slide-left" />
           <figcaption>
-            <h2>Não perca a oportunidade!</h2>
-            <p>O guia que eu queria ter quando comecei a programar</p>
+            <h2 class="slide-top-elms">Não perca a oportunidade!</h2>
+            <p class="slide-top-elms">
+              O guia que eu queria ter quando comecei a programar
+            </p>
 
-            <div class="price">
+            <div class="price show-element">
               <p class="last-price"><sup>DE</sup> 99<sup>,99</sup></p>
               <p class="current-price"><sup>POR</sup>59<sup>,99</sup></p>
             </div>
+            <br />
+            <p style="font-size: 0.8em" class="show-element">
+              Oferta por tempo limitado!
+            </p>
           </figcaption>
         </figure>
       </div>
 
       <div class="form">
-        <h3>Escolha a melhor forma para você</h3>
-        <p>
+        <h3 class="slide-top-elms">Escolha a melhor forma para você</h3>
+        <p class="slide-top-elms">
           Receba pelo seu email seu ebook ou solicite uma versão curta para
           conhece nosso trabalho. Está com dúvida, fale comigo.
         </p>
 
-        <ul class="payment-methods">
+        <ul class="payment-methods show-element">
           <li>
             <input type="radio" name="rCheck" id="r1" />
             <label for="r1">Debito</label>
@@ -240,52 +261,63 @@
         </ul>
         <br />
 
-        <div class="input-area">
+        <div class="input-area show-element">
           <label id="nComplet">Seu nome completo:</label>
           <input
             type="text"
             name="nComplet"
             id="nComplet"
             placeholder="Seu nome"
+            required
           />
         </div>
 
-        <div class="input-area">
+        <div class="input-area show-element">
           <label id="email">Seu email:</label>
-          <input type="email" name="email" id="email" placeholder="Seu email" />
-        </div>
-
-        <div class="input-area">
-          <label id="nCard">N° do cartão:</label>
           <input
-            type="number"
-            name="nCard"
-            id="nCard"
-            placeholder="Número do cartão"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Seu email"
+            required
           />
         </div>
 
-        <div class="input-area">
-          <label id="dateVenc">Data de vencimento:</label>
-          <input
-            type="number"
-            name="dateVenc"
-            id="dateVenc"
-            placeholder="Data de vencimento"
-          />
-        </div>
+        <div class="grid-input show-element">
+          <div class="input-area input-width-full">
+            <label id="nCard">N° do cartão:</label>
+            <input
+              type="number"
+              name="nCard"
+              id="nCard"
+              placeholder="000.000.000.000"
+            />
+          </div>
 
-        <div class="input-area">
-          <label id="nCodSeg">N° de segurança:</label>
-          <input
-            type="number"
-            name="nCodSeg"
-            id="nCodSeg"
-            placeholder="Número de segurança"
-          />
+          <div class="input-area input-width show-element">
+            <label id="dateVenc">Data de vencimento:</label>
+            <input
+              type="number"
+              name="dateVenc"
+              id="dateVenc"
+              placeholder="00/00"
+            />
+          </div>
+
+          <div class="input-area input-width show-element">
+            <label id="nCodSeg">N° de segurança:</label>
+            <input
+              type="number"
+              name="nCodSeg"
+              id="nCodSeg"
+              placeholder="000"
+            />
+          </div>
         </div>
         <br />
-        <button type="submit" class="btn-primary">Finalizar</button>
+        <button type="submit" class="btn-primary show-element">
+          Finalizar
+        </button>
       </div>
     </section>
 
@@ -305,14 +337,10 @@
           <a href="#" title="github"><i class="fi fi-brands-github"></i></a>
         </li>
         <li>
-          <a href="#" title="whatsapp"
-            ><i class="fi fi-brands-whatsapp"></i
-          ></a>
+          <a href="#" title="whatsapp"><i class="fi fi-brands-whatsapp"></i></a>
         </li>
         <li>
-          <a href="#" title="facebook"
-            ><i class="fi fi-brands-facebook"></i
-          ></a>
+          <a href="#" title="facebook"><i class="fi fi-brands-facebook"></i></a>
         </li>
         <li>
           <a href="#" title="twitter"><i class="fi fi-brands-twitter"></i></a>
@@ -335,5 +363,7 @@
         <a href="https://www.flaticon.com/uicons">Flaticon</a>
       </p>
     </footer>
+
+    <script src="dist/js/scrollreveal.js"></script>
   </body>
 </html>

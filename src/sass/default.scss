@@ -82,4 +82,16 @@ ul {
   list-style-type: none;
 }
 
+.btn-primary {
+  border: 0;
+  outline: 0;
+  padding: 0.6rem 1.5rem;
+  font-size: 1em;
+  background-color: $bg-btn;
+  color: #f4f4f4;
+  border-radius: 0.2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+}
+
 // sass --watch src\sass\main.scss dist\css\main.css

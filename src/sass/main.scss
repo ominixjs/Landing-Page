@@ -5,29 +5,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 15%;
-}
-
-.navigation {
-  display: flex;
-  gap: 3rem;
-  & li a {
-    color: default.$color-title;
-    font-weight: 500;
-    &:hover {
-      color: default.$color-js;
+  & .navigation {
+    display: flex;
+    gap: 3rem;
+    & li a {
+      color: default.$color-title;
+      font-weight: 500;
+      &:hover {
+        color: default.$color-js;
+      }
     }
   }
-}
-
-.btn-primary {
-  border: 0;
-  outline: 0;
-  padding: 0.3rem 1rem;
-  background-color: default.$bg-btn;
-  color: #f4f4f4;
-  border-radius: 0.2rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  cursor: pointer;
 }
 
 #home {

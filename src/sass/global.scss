@@ -1,83 +1,249 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css");
+@use "main";
 
-html.sr .show-element,
-html.sr .slide-left-list li,
-html.sr .slide-left,
-html.sr .slide-top,
-html.sr .slide-top-elms {
-  visibility: hidden;
-}
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 1.1em;
+  }
 
-$color-prg: #535353;
-$color-title: #333333;
-$color-js: #ffbd59;
-$bg-btn: #0f5685;
-$bg-secundary: #ebe7dc;
+  .navbar {
+    padding: 0.5rem 5%;
 
-*,
-html {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  user-select: none;
-  font-family: "Poppins", sans-serif;
-  color: $color-prg;
-  scroll-behavior: smooth;
-}
+    & .navgation {
+      display: none;
+    }
+  }
 
-a,
-label,
-p,
-li,
-i {
-  letter-spacing: -0.5px;
-}
+  #home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-inline: 5%;
+    gap: 2rem;
+    margin-bottom: 20%;
 
-a,
-i {
-  text-decoration: none;
-  transition: color 300ms, outline-color 300ms;
-}
+    & .container {
+      width: 100%;
 
-body {
-  background-color: #f4f4f4;
-  font-size: 0.9em;
-}
+      & h2 {
+        font-size: 36px;
+      }
 
-h2,
-h3,
-h4,
-h5 {
-  color: #3b3b3b;
-  line-height: 1.2;
-}
+      & p {
+        font-size: 14px;
+        max-width: 100%;
+      }
+    }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Poppins", sans-serif;
-  letter-spacing: -1px;
-}
+    & .image {
+      justify-content: center;
+      width: 90%;
+      max-width: 90%;
 
-.logo,
-h3.mark {
-  font-family: "JetBrains Mono", serif !important;
-}
+      &::after {
+        display: none;
+      }
 
-.logo {
-  font-weight: 300;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #333333;
-  & span {
-    font-family: inherit;
-    color: $color-js;
+      & img {
+        width: inherit;
+      }
+    }
+  }
+
+  #attribute {
+    padding: 10% 5%;
+
+    & h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    & ul li {
+      font-size: 14px;
+    }
+  }
+
+  #content {
+    padding: 15% 1rem;
+
+    & h2 {
+      font-size: 32px;
+    }
+
+    & .scroll-items {
+      flex-direction: column;
+      align-items: normal;
+
+      & .item {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+
+        & h3.mark {
+          font-size: 32px;
+          height: 100px;
+          display: inline-flex;
+          align-items: end;
+        }
+
+        & h4 {
+          font-size: 20px;
+          height: 100px;
+          display: inline-flex;
+          align-items: end;
+          margin-bottom: 0;
+        }
+
+        & p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  #about {
+    padding: 20% 1rem;
+
+    & .card {
+      width: 100%;
+      height: auto;
+
+      & .desc {
+        font-size: 14px;
+      }
+    }
+  }
+
+  #offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+    padding-block: 20%;
+
+    & .container {
+      width: 100%;
+    }
+
+    & .intro {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+
+      & img {
+        width: 250px;
+        height: 100%;
+      }
+
+      & figcaption {
+        display: inherit;
+        flex-direction: inherit;
+        align-items: inherit;
+        text-align: center;
+
+        & h2 {
+          max-width: 100%;
+        }
+
+        & > p {
+          max-width: 100%;
+        }
+
+        & .price {
+          align-items: center;
+          width: 100%;
+          background-color: #0f5685;
+          padding-block: 2rem;
+          
+          & .last-price,
+          & .current-price {
+            font-weight: 600;
+            color: #ebe7dc;
+
+            & sup {
+              color: #ebe7dc;
+            }
+          }
+
+          & .last-price {
+            &::after {
+              background-color: #ebe7dc;
+            }
+          }
+
+          & .current-price {
+            border-top: 1px solid #ebe7dc;
+            color: #ffbd59;
+            font-size: 80px;
+
+            & sup:not(:first-child) {
+              color: #ffbd59;
+            }
+          }
+        }
+      }
+    }
+    & .form {
+      width: 100%;
+      max-width: 100%;
+      padding-left: 0;
+      margin-top: 10%;
+      padding-inline: 5%;
+
+      & h3 {
+        max-width: 100%;
+      }
+
+      & p {
+        max-width: 100%;
+      }
+
+      & .payment-methods {
+        & li {
+          & label {
+            padding: 0.2rem 0.6rem;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+
+            transition: background-color 300ms;
+
+            cursor: pointer;
+          }
+        }
+      }
+
+      & .input-area {
+        width: 100%;
+
+        & label {
+          font-size: 12px;
+        }
+      }
+
+      & .grid-input {
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 20%;
+
+    .footer-help {
+      margin-block: 2rem;
+
+      & li a {
+        font-size: 14px;
+      }
+    }
+
+    & > p {
+      font-size: 14px;
+    }
   }
 }
 
-ul {
-  list-style-type: none;
-}
+// sass --watch src\sass\global.scss dist\css\global.css

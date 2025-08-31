@@ -1,6 +1,6 @@
 @use "main";
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   body {
     font-size: 1.1em;
   }
@@ -260,7 +260,7 @@
   }
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 701px) and (max-width: 1200px) {
   .navbar {
     .navigation {
       gap: 1rem;

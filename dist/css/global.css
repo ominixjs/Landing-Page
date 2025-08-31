@@ -474,7 +474,7 @@ footer > p a {
   color: #ffbd59;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   body {
     font-size: 1.1em;
   }
@@ -680,7 +680,7 @@ footer > p a {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 701px) {
   .navbar .navigation {
     gap: 1rem;
   }

@@ -389,7 +389,7 @@ ul {
 }
 #offer .form .input-area input {
   width: 100%;
-  padding: 0.2rem 1rem;
+  padding: 0.4rem 1rem;
   background-color: #f4f4f4;
   border: 1px solid #535353;
   border-radius: 0.2rem;
@@ -678,6 +678,71 @@ footer > p a {
   }
   footer > p {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 501px) {
+  .navbar .navigation {
+    gap: 1rem;
+  }
+  #home {
+    padding-inline: 0;
+    padding-left: 5%;
+  }
+  #home .container {
+    width: 50%;
+  }
+  #home .container h2 {
+    font-size: 40px;
+  }
+  #home .container p {
+    max-width: 100%;
+  }
+  #home .image {
+    width: 40%;
+    justify-content: center;
+  }
+  #home .image::after {
+    display: none;
+  }
+  #attribute {
+    padding-inline: 5%;
+  }
+  #attribute h2 {
+    text-align: center;
+  }
+  #content {
+    padding-inline: 5%;
+  }
+  #content .scroll-items .item {
+    height: 100%;
+    max-height: 100%;
+  }
+  #offer {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10% 0;
+  }
+  #offer .container {
+    width: 100%;
+  }
+  #offer .container .intro {
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+  }
+  #offer .form {
+    width: 60%;
+    max-width: 60%;
+    border-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #offer .form h3 {
+    text-align: center;
+  }
+  #offer .form .payment-methods label {
+    padding: 0.2rem 0.5rem;
   }
 }
 

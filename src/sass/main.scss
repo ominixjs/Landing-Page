@@ -314,15 +314,12 @@
       display: flex;
       align-items: center;
       width: max-content;
-      border: 1px solid default.$color-prg;
       border-radius: 0.4rem;
 
       & li {
         display: inherit;
-
-        &:not(:last-child) {
-          border-right: 1px solid default.$color-prg;
-        }
+        padding: .2rem .6rem;
+        border: 1px solid default.$color-prg;
 
         & input {
           appearance: none;
@@ -334,6 +331,7 @@
         }
 
         & label {
+          display: flex;
           padding: 0.2rem 1rem;
           font-size: 12px;
           font-weight: 500;

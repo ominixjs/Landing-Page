@@ -20,12 +20,20 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](./LICENSE)
 
+## :books: Etapas do Fluxo
+
+1. Landing Page → O visitante acessa e conhece o eBook.
+2. Checkout Seguro → Preenche nome, email e dados de pagamento.
+3. Pagamento Aprovado → O sistema valida a transação.
+4. Automação de Entrega → Disparo automático de email.
+5. Cliente Recebe o eBook → Via anexo ou link seguro de download.
+
 ## Material usado
 
 - [Flaticons]()
 - [ScrollReveal]()
 
-## Veja mais ou entre em Contato :iphone:
+## :iphone: Veja mais ou entre em Contato
 
 - [Github](https://github.com/ominixjs)
 - [Instagram](https://instagram.com/Alexandrepa_)

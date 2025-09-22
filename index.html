@@ -234,7 +234,7 @@
         </figure>
       </div>
 
-      <div class="form">
+      <form action="#" method="post" class="form" id="frm">
         <h3 class="slide-top-elms">Escolha a melhor forma para você</h3>
         <p class="slide-top-elms">
           Receba pelo seu email seu ebook ou solicite uma versão curta para
@@ -262,63 +262,74 @@
         <br />
 
         <div class="input-area show-element">
-          <label id="nComplet">Seu nome completo:</label>
+          <label for="full_name">Seu nome completo:</label>
           <input
             type="text"
-            name="nComplet"
-            id="nComplet"
+            name="full_name"
+            id="full_name"
             placeholder="Seu nome"
-            required
+            value="Carlos"
           />
         </div>
 
         <div class="input-area show-element">
-          <label id="email">Seu email:</label>
+          <label for="email">Seu email:</label>
           <input
             type="email"
             name="email"
             id="email"
+            value="TESTE@gmail.com"
             placeholder="Seu email"
-            required
+          />
+        </div>
+
+        <div class="input-area show-element">
+          <label for="cpf">Seu CPF*:</label>
+          <input
+            type="text"
+            name="cpf"
+            id="cpf"
+            maxlength="14"
+            value="118.501.065-33"
+            placeholder="000.000.000-00"
           />
         </div>
 
         <div class="grid-input show-element">
           <div class="input-area input-width-full">
-            <label id="nCard">N° do cartão:</label>
+            <label for="card_number">N° do cartão:</label>
             <input
-              type="number"
-              name="nCard"
-              id="nCard"
-              placeholder="000.000.000.000"
+              type="text"
+              name="card_number"
+              id="card_number"
+              maxlength="19"
+              placeholder="#### #### #### ####"
             />
           </div>
 
           <div class="input-area input-width show-element">
-            <label id="dateVenc">Data de vencimento:</label>
+            <label for="validade">Validade:</label>
             <input
-              type="number"
-              name="dateVenc"
-              id="dateVenc"
-              placeholder="00/00"
+              type="text"
+              name="validade"
+              id="validade"
+              maxlength="5"
+              placeholder="MM/AA"
             />
           </div>
 
           <div class="input-area input-width show-element">
-            <label id="nCodSeg">N° de segurança:</label>
-            <input
-              type="number"
-              name="nCodSeg"
-              id="nCodSeg"
-              placeholder="000"
-            />
+            <label for="cvv">CVV:</label>
+            <input type="text" name="cvv" id="cvv" maxlength="4" />
           </div>
         </div>
+        <p id="res"></p>
         <br />
+
         <button type="submit" class="btn-primary show-element">
           Finalizar
         </button>
-      </div>
+      </form>
     </section>
 
     <!-- Final -->
@@ -365,5 +376,6 @@
     </footer>
 
     <script src="dist/js/scrollreveal.js"></script>
+    <script src="dist/js/validation.js"></script>
   </body>
 </html>

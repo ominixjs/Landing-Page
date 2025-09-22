@@ -310,6 +310,11 @@
       margin-block: 1rem;
     }
 
+    & p#res {
+      color: rgb(224, 45, 45);
+      font-size: 1em;
+    }
+
     & .payment-methods {
       display: flex;
       align-items: center;
